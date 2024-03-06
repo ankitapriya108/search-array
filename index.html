@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Array Asc or Desc</title>
+</head>
+<body>
+    <input type="number" placeholder="Enter No." id="enter">
+    <button id="add">Add To Array</button>
+    <input type="number" placeholder="Search.." id="search">
+    <button id="show">Show</button>
+
+    <p id="output"></p>
+
+    <script>
+        const input=document.querySelector("#enter")
+        const add=document.querySelector("#add")
+        const search=document.querySelector("#search")
+        const show=document.querySelector("#show")
+        const numbers=[]
+        add.onclick=()=>
+         {
+            if(input.value.length>0)
+            {
+                numbers.push(Number(input.value))
+                console.log(numbers)
+                document.querySelector("#output").innerHTML=numbers
+            }
+            input.value=""
+        }
+
+        show.onclick=()=>
+        {
+            const targetSum = Number(search.value);
+             const output=[]
+             for (let i = 0; i < numbers.length; i++) {
+             for (let j = i + 1; j < numbers.length; j++) {
+             if (numbers[i] + numbers[j] === targetSum) {
+              output.push([numbers[i],numbers[j]])
+        
+             }
+             
+            }
+            }
+            console.log(output)
+        
+             }
+        
+        
+        
+       
+    </script>
+</body>
+</html>
