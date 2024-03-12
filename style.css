@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    
+    padding-top: 250px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right,rgba(255, 0, 0, 0.523), rgba(0, 0, 255, 0.532),rgba(255, 255, 0, 0.541),rgba(255, 0, 0, 0.573), rgba(0, 0, 255, 0.5),rgba(255, 255, 0, 0.55));
+    text-align: center;
+}
+.input{
+    height: auto;
+    text-align: center;
+}
+.search{
+    height: auto;
+    text-align: center;
+}
+input#enter {
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    padding: 5px;
+}
+button#add {
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(20, 18, 16);
+    color: white;
+    margin-right: 50px;
+}
+input#search {
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    padding: 5px;
+}
+button#show {
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+  background-color: rgb(25, 24, 21);
+    color: white;
+}
+p#output {
+    text-align: justify;
+    padding-top: 100px;
+    padding-left: 430px;
+    font-size: 25px;
+}
+p#showValue {
+    text-align: justify;
+    padding-top: 45px;
+    padding-left: 430px;
+    font-size: 25px;
+}
+.output{
+    padding-bottom: 200px;
+}
+@media screen and (max-width:1250px){
+    p#output {
+        padding-left: 250px;
+        padding-top: 40px;
+       
+    }
+    p#showValue {
+       
+        padding-left: 250px;
+      
+    }
+}
+@media screen and (max-width:1250px){
+    p#output {
+        padding-left: 125px;
+       
+    }
+    p#showValue {
+       
+        padding-left: 125px;
+      
+    }
+}
+@media screen and (max-width:700px){
+    .input {
+        margin-bottom: 2rem;
+    }
+    .search {
+        margin-right: 52px;
+    }
+}
+@media screen and (max-width:400px){
+    .input {
+        margin-bottom: 2rem;
+    }
+    .search {
+        margin-right: 52px;
+    }
+
+    input#enter {
+        height: 30px;
+        width: 150px;
+        padding: 2px;
+        margin-left: 40px;
+    }
+    button#add {
+        width: 95px;
+        height: 30px;
+        margin-left: 82px;
+        margin-top: 10px;
+    }
+    input#search {
+     
+        height: 30px;
+        width: 150px;
+        padding: 2px;
+        margin-left: 90px;
+    }
+    button#show {
+      
+        width: 95px;
+        height: 30px;
+        margin-left: 82px;
+        margin-top: 10px;
+    }
+    p#output {
+    
+  
+        padding-left: 60px;
+        font-size: 20px;
+    }
+    p#showValue {
+        padding-left: 60px;
+        font-size: 20px;
+    }
+    .head{
+        padding-top: 100px;
+    }
+    .output{
+        padding-bottom: 100px;
+    }
+
+}

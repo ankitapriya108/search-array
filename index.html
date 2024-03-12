@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sort Array Asc or Desc</title>
+    <title>Search array</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="number" placeholder="Enter No." id="enter">
-    <button id="add">Add To Array</button>
-    <input type="number" placeholder="Search.." id="search">
-    <button id="show">Show</button>
-
-    <p id="output"></p>
+    <div class="container">
+        <div class="head">
+            <div class="input">
+                <input type="number" placeholder="Enter No." id="enter">
+                <button id="add">Add To Array</button>
+            </div>
+           <div class="search">
+            <input type="number" placeholder="Search.." id="search">
+            <button id="show">Show</button>
+           </div>
+        </div>
+       
+       
+        <div class="output">
+            <p id="output">  Input numbers:</p>
+            <p id="showValue"> Set of inputs:</p>
+        </div>
+      
+    </div>
+   
+   
 
     <script>
         const input=document.querySelector("#enter")
@@ -25,7 +41,7 @@
             {
                 numbers.push(Number(input.value))
                 console.log(numbers)
-                document.querySelector("#output").innerHTML=numbers
+                document.querySelector("#output").innerHTML = " Input numbers: " + numbers;
             }
             input.value=""
         }
@@ -38,12 +54,14 @@
              for (let j = i + 1; j < numbers.length; j++) {
              if (numbers[i] + numbers[j] === targetSum) {
               output.push([numbers[i],numbers[j]])
+            document.querySelector("#showValue").innerHTML = "Set of inputs: " + output;
         
              }
              
             }
             }
             console.log(output)
+            search.value=""
         
              }
         
