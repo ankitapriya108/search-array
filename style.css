@@ -5,7 +5,7 @@
 }
 .head{
     
-    padding-top: 250px ;
+    padding-top: 100px ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,9 @@
     width: 100%;
     background: linear-gradient(to right,rgba(255, 0, 0, 0.523), rgba(0, 0, 255, 0.532),rgba(255, 255, 0, 0.541),rgba(255, 0, 0, 0.573), rgba(0, 0, 255, 0.5),rgba(255, 255, 0, 0.55));
     text-align: center;
+}
+.container h1{
+    padding-top: 100px;
 }
 .input{
     height: auto;
@@ -109,28 +112,28 @@ p#showValue {
 
     input#enter {
         height: 30px;
-        width: 150px;
+        width: 200px;
         padding: 2px;
-        margin-left: 40px;
+        margin-left: 30px;
     }
     button#add {
         width: 95px;
         height: 30px;
-        margin-left: 82px;
+        margin-left: 80px;
         margin-top: 10px;
     }
     input#search {
      
         height: 30px;
-        width: 150px;
+        width: 200px;
         padding: 2px;
-        margin-left: 90px;
+        margin-left: 80px;
     }
     button#show {
       
         width: 95px;
         height: 30px;
-        margin-left: 82px;
+        margin-left: 85px;
         margin-top: 10px;
     }
     p#output {
